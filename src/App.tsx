@@ -83,7 +83,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100">
       <div className="container mx-auto px-4 py-12 max-w-7xl">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
@@ -129,24 +129,24 @@ function App() {
         ) : (
           <div className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+              <div className="bg-white rounded-2xl shadow-xs overflow-hidden">
                 <div className="p-4 border-b border-slate-200">
                   <h3 className="font-semibold text-slate-900">Original</h3>
                 </div>
                 <div className="p-6 bg-slate-50">
-                  <div className="relative aspect-square bg-white rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative aspect-square bg-white rounded-lg overflow-hidden shadow-xs">
                     <img src={originalImage} alt="Original" className="w-full h-full object-contain" />
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+              <div className="bg-white rounded-2xl shadow-xs overflow-hidden">
                 <div className="p-4 border-b border-slate-200">
                   <h3 className="font-semibold text-slate-900">Background Removed</h3>
                 </div>
                 <div className="p-6 bg-slate-50">
                   <div
-                    className="relative aspect-square rounded-lg overflow-hidden shadow-sm"
+                    className="relative aspect-square rounded-lg overflow-hidden shadow-xs"
                     style={{
                       backgroundImage:
                         'linear-gradient(45deg, #f3f4f6 25%, transparent 25%), linear-gradient(-45deg, #f3f4f6 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #f3f4f6 75%), linear-gradient(-45deg, transparent 75%, #f3f4f6 75%)',
@@ -194,21 +194,21 @@ function App() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-slate-900 mb-6">How it works</h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="bg-white p-6 rounded-xl shadow-xs">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-slate-700">1</span>
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">Upload Image</h3>
                 <p className="text-slate-600">Choose any image from your device</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="bg-white p-6 rounded-xl shadow-xs">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-slate-700">2</span>
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">Processing</h3>
                 <p className="text-slate-600">Automatically removes the background</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="bg-white p-6 rounded-xl shadow-xs">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-slate-700">3</span>
                 </div>
